@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <head>
   <title>Eagles Wings Portmore Mentorship Programme Signup</title>
   <style>
@@ -71,8 +78,9 @@
   </style>
 </head>
 <body>
+    <!--php a part of the login this is just a comment--> 
     <div class="navigation">
-        <a href="login.php">Login</a>
+        <a href="Login.html">Login</a>
         <a href="index.html">Home</a>
         <a href="aboutus.html">ABOUT US</a>
         <a href="Mission.html">MISSION & VISION</a>
@@ -84,29 +92,29 @@
         <a href="">SUPPORT US</a>
         <a href="ContactUs.html">CONTACT US</a>
     </div>
-<div class="container">
-  <h2>Signup Form</h2>
-  <form action="signup.php" method="post">
-    <div class="form-group">
-      <label for="fullname">Full Name:</label>
-      <input type="text" id="fullname" name="fullname" required>
+    <div class="container">
+        <h2>Signup Form</h2>
+        <form action="signup.php" method="post">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Signup">
+            </div>
+        </form>
     </div>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
-    </div>
-    <div class="form-group">
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-    </div>
-    <div class="form-group">
-      <input type="submit" value="Signup">
-    </div>
-  </form>
-</div>
 </body>
 </html>
