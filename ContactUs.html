@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<head>
+    <title>Contact Us - Eagles Wings Portmore Mentorship Programme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navigation {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+
+            .navigation a {
+                margin: 10px;
+                text-decoration: none;
+                color: #333;
+            }
+
+        .content {
+            padding: 20px;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+            .contact-form input[type="text"],
+            .contact-form textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: none;
+            }
+
+                .contact-form input[type="text"][readonly] {
+                    background-color: #f2f2f2;
+                }
+
+            .contact-form input[type="submit"] {
+                background-color: #333;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+
+                .contact-form input[type="submit"]:hover {
+                    background-color: #555;
+                }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Eagles Wings Portmore Mentorship Programme</h1>
+    </div>
+    <div class="navigation">
+        <a href="login.php">Login</a>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="Mission.html">MISSION & VISION</a>
+        <a href="">MEET THE TEAM</a>
+        <a href="">PRESS</a>
+        <a href="">FACTS</a>
+        <a href="">GET INVOLVED</a>
+        <a href="">FAQ</a>
+        <a href="">SUPPORT US</a>
+        <a href="ContactUs.html">CONTACT US</a>
+    </div>
+    <div class="content">
+        <h2 style="text-align: center;">Contact Us</h2>
+        <div class="contact-form">
+            <form action="submit_contact_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="text" name="email" placeholder="Your Email" required><br>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+            <div class="company-details">
+                <h3>Company Contact Information </h3>
+                <p>Phone Number: <input type="text" value="876202-4257" readonly></p>
+                <p>Email: <input type="text" value="eagleswingsmentorship@hotmail.com" readonly></p>
+                <p>Address: <input type="text" value="Cumberland, Portmore, St Catherine, Jamaica" readonly></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
