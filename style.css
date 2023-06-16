@@ -28,4 +28,7 @@ a{
 
 body{
     background-image: url(EageleBackground.png);
+    background-position:center;
+    background-size:cover;
+    position:relative;
 }
