@@ -1,0 +1,40 @@
+﻿/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+    .navigation a {
+        margin: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+
+.content {
+    padding: 20px;
+}
+
+/* Additional styles for the Support Us section */
+
+section {
+    padding: 20px;
+}
+
+    section p {
+        margin-bottom: 20px;
+    }
