@@ -1,63 +1,88 @@
-*{
-     margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-    
-.header {
-    min-height: 100vh 
-    width:100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,0,30,0.7)),url(EageleBackground.png) display: flex;
-    background-position: center;
-    background-size: cover;
-    position:relative;
-    
-      nav{
-                display:flex;
-                padding:2% 6%;
-                justify-content:space-between;
-                align-items: center;
-          
-}
-    nav image{
-        width:150px;
-    }
-    .nav-links{
-        flex: 1;
-        text-align: right;
-    }
-    .nav-links ul li{
-        list-style:none;
-        display: inline-block;
-        padding:8px 12px;
-        position:relative;
-    
-    
-        
-
 #logo {
     position: absolute;
-    margin-top: 30px;
+    margin-top: 0px;
     left: 10px;
 }
 
 #title {
     margin-top: 30px;
+    padding-top: 25px;
     margin: auto;
     color: blue;
+    text-align: center;
 }
 
-nav{
+#header {}
+
+nav {
     margin-top: 50px;
     text-align: center;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-body{
+body {
     background-image: url(EageleBackground.png);
-    background-position:center;
-    background-size:cover;
-    position:relative;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+.navigation a {
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+#each_one {
+    color: yellow;
+    font-size: 40px;
+}
+
+#reach_one {
+    color: white;
+    font-size: 40px;
+}
+
+#tagline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 70px;
+    /* Adjust this based on your tagline height + desired gap */
+    width: 100%;
+}
+
+#slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    font-size: 30px;
+    color: yellow;
+}
+
+@media (max-width: 600px) {
+
+    /* This is a media query for screens smaller than 600px wide */
+    #logo {
+        max-width: 20%;
+        /* Increase the logo size on smaller screens */
+        left: 1%;
+        /* Adjust the logo position */
+    }
 }
