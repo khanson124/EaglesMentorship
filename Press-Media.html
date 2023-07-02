@@ -1,0 +1,135 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press/Media</title>
+    <link rel="stylesheet" href="Press-Media.css">
+</head>
+<head>
+    <title> Press/Media -Eagles Wings Portmore Mentorship Programme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navigation {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+
+            .navigation a {
+                margin: 10px;
+                text-decoration: none;
+                color: #333;
+            }
+
+        .content {
+            padding: 20px;
+        }
+
+        @keyframes slide-in {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .animated-text {
+            animation: slide-in 1s ease-out;
+        }
+
+        .centered-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Eagles Wings Portmore Mentorship Programme</h1>
+    </div>
+    <div class="navigation">
+        <a href="Login.html">Login</a>
+        <a href="login.php">Login</a>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="mission.html">MISSION & VISION</a>
+        <a href="">MEET THE TEAM</a>
+        <a href="Press-Media.html">PRESS</a>
+        <a href="Facts.html">FACTS</a>
+        <a href="">GET INVOLVED</a>
+        <a href="">FAQ</a>
+        <a href="Supportus.html">SUPPORT US</a>
+        <a href="ContactUs.html">CONTACT US</a>
+    </div>
+    <div class="content">
+        <h1 class=" = centered-text">PRESS/MEDIA </h1>
+    </div>
+
+
+    <div class="container">
+
+        <div class="image-container">
+            <div class="image"><img src="MEDIA-CVM Launch.jpg" alt=""></div>
+            <div class="caption-box">
+                <div class="caption">CVM INTERVIEW</div>
+            </div>
+            <div class= "image"><img src="Media-CVM Interview.jpg" alt=""></div>
+            <div class="caption-box">
+                <div class="caption">CVM LAUNCH</div> </div>
+                <div class= "image"><img src="Press-(JAMAICA OBSERVER)-Newspaper Article.jpg" alt=""></div>
+                <div class="caption-box">
+                    <div class="caption">(JAMAICA OBSERVER)-Newspaper Article</div> </div>
+                    <div class="image"><img src="Media-Launch of Mentorship Day.jpg" alt=""></div>
+                    <div class="caption-box">
+                        <div class="caption">Launch of Mentorship Day</div> </div>
+                        <div class="image"><img src="Media - KOOL FM Interview.jpg" alt=""></div>
+                        <div class="caption-box">
+                            <div class="caption">KOOL FM Interview</div> </div>
+                            <div class="image"><img src="Media-JIS Interview.jpg" alt=""></div>
+                            <div class="caption-box">
+                                <div class="caption">JIS Interview</div> </div>
+
+
+                            </div>
+                            <div class="popup-image">
+                                <span>&times;</span>
+                                <img src="MEDIA-CVM Launch.jpg" alt="" />
+                            </div>
+
+
+                        </div>
+    <script>
+        document.querySelectorAll('.image-container img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+
+        });
+
+        document.querySelector('.popup-image span').onclick = () => {
+            document.querySelector('.popup-image').style.display = 'none';
+
+        }
+
+    </script>
+
+
+<</body>
+
+</html>
