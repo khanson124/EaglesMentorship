@@ -1,0 +1,142 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="Facts.css">
+
+    <title> Facts-Eagles Wings Portmore Mentorship Programme</title>
+
+</head>
+
+<body>
+    <div id="header">
+        <a href="index.html"><img width="90" src="Eagles_wings_logo_small.png" alt="Eageles Wings logo"></a>
+        <h1 id="title">EAGLES' WINGS PORTMORE MENTORSHIP PROGRAMME</h1>
+        <br>
+    </div>
+    <nav>
+        <a href="Login.html">Login</a>
+        <a href="login.php">Login</a>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="mission.html">MISSION & VISION</a>
+        <a href="">MEET THE TEAM</a>
+        <a href="">PRESS</a>
+        <a href="">FACTS</a>
+        <a href="">GET INVOLVED</a>
+        <a href="">FAQ</a>
+        <a href="">SUPPORT US</a>
+        <a href="ContactUs.html">CONTACT US</a>
+    </nav>
+
+    <div class="wrap">
+        <h1>FACTS</h1>
+        <div class="holder"><div class="bar" data-percent="55%"><span class="label">likely than their peers to skip a day of school</span></div></div>
+
+        <div class="holder"><div class="bar" data-percent="78%"><span class="label second"> likely to volunteer regularly</span></div></div>
+
+        <div class="holder"><div class="bar" data-percent="90%"><span class="label"> Interested in becoming a mentor</span></div></div>
+
+        <div class="holder"><div class="bar" data-percent="89%"><span class="label second">those who have been mentored go on to mentor others.</span></div></div>
+
+        <div class="holder"><div class="bar" data-percent="130%"><span class="label"> more likely to hold leadership positions</span></div></div>
+
+        <div class="holder"><div class="bar" data-percent="55%"><span class="label second">HTML</span></div></div>
+
+        <div class="holder"><div class="bar" data-percent="52%"><span class="label">Students who meet regularly with their mentors are less likely than their peers to skip a day of school</span></div></div>
+
+
+
+    </div>
+
+    <div id="Body1">
+
+        <section>
+            <p>
+
+                Research confirms that quality mentoring relationships have powerful positive effects on young people in a variety of personal, academic, and professional situations.
+            </p>
+            <p>
+                Employees who received mentoring were promoted five times more often than those who didn't have mentors.
+
+            </p>
+
+
+            <p>
+
+                Young Adults With A Mentor Are:
+
+            </p>
+
+            <p>
+                55%
+                likely than their peers to skip a day of school
+
+
+            </p>
+
+            <p>
+                78%
+                more likely to volunteer regularly
+
+            </p>
+
+            <p>
+
+                90%
+                are interested in becoming a mentor
+
+            </p>
+
+            <p>
+                89% 
+                of those who have been mentored go on to mentor others.
+                
+            </p>
+            <p>
+                130%
+                more likely to hold leadership positions
+                
+            </p>
+            <p>
+                55%
+                young adults who face an opportunity gap but have a mentor are more likely to be enro
+
+            </p>
+            <p>
+                52%
+                Students who meet regularly with their mentors are less likely than their peers to skip a day of school
+
+
+            </p>
+
+
+        </section>
+    </div>
+    <script>
+        setTimeout(function start() {
+            $('.bar').each(function (i)){
+                var $bar = $(this);
+                $(this).append('<span class="count"></span>')
+                setTimeout(function () {
+                    $bar.css('width', $bar.attr('data-percent'));
+                }, i * 100);
+            
+        });
+        $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).parent('.bar').attr('data-percent')
+            }, {
+                duration: 2000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now) + '%');
+                }
+            });
+        });
+
+        }, 500)
+    </script>
+</body>
+</html>
